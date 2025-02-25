@@ -22,6 +22,7 @@ function Surprise() {
 
     
     const song = document.getElementById("song");
+    song.loop = true; 
     song.play().then(() => {
         console.log("Music started!");
     }).catch(error => {
