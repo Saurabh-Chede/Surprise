@@ -1,4 +1,4 @@
 function Surprise(){
-    window.location.href = 'index.html';
+    window.location.href = 'Surprise1.html';
 }
 

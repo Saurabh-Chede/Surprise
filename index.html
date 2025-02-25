@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,54 +7,9 @@
     <link rel="stylesheet" href="style.css">
 
 </head>
-
-
+<script src="script.js" defer></script>
 <body>
-
-    <div>
-        <div class="red-container">
-            <div class="circle"
-                style="margin-left: 10px;margin-top: 10px; width: 8px; height: 8px; border-radius: 50%; border: 0.4px solid white;z-index: 4;background-color: white;">
-            </div>
-            <img src="/cd-disk image.png" alt="disk" id="disk" class="rotate">
-            <div class="line"></div>
-            <div class="lyrics">
-                <p> —— Round and Round</p>
-                <audio id="song" src="/Round and Round.mp3" autoplay loop></audio>
-            </div>
-        </div>
-    </div>
-    <script>
-        let colorInterval;
-
-        function changeBackgroundColor() {
-            document.body.style.backgroundColor = `hsl(${Math.random() * 360}, 100%, 80%)`;
-        }
-        function startBackgroundAnimation() {
-            colorInterval = setInterval(changeBackgroundColor, 1000);
-        }
-        
-        function stopBackgroundAnimation() {
-            clearInterval(colorInterval);
-        }
-        
-        startBackgroundAnimation();
-        
-        const disk = document.getElementById("disk");
-        const song = document.getElementById("song");
-        
-        disk.addEventListener("click", function() {
-            if (song.paused) {
-                song.play();
-                startBackgroundAnimation();
-                disk.classList.add("rotate");
-            } else {
-                song.pause();
-                stopBackgroundAnimation();
-                disk.classList.remove("rotate");
-            }
-        });
-    </script>
+    <button class="surprise_btn" onclick="Surprise()">Surprise Me</button>
+    
 </body>
-
 </html>
