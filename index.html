@@ -10,6 +10,19 @@
 <script src="script.js" defer></script>
 <body>
     <button class="surprise_btn" onclick="Surprise()">Surprise Me</button>
+    <div class="hidden" id="surpriseSection">
+        <div class="red-container">
+            <div class="circle"
+                style="margin-left: 10px;margin-top: 10px; width: 8px; height: 8px; border-radius: 50%; border: 0.4px solid white;z-index: 4;background-color: white;">
+            </div>
+            <img src="/cd-disk image.png" alt="disk" id="disk" class="rotate">
+            <div class="line"></div>
+            <div class="lyrics">
+                <p> —— Round and Round</p>
+                <audio id="song" src="/Round and Round.mp3"></audio>
+            </div>
+        </div>
+    </div>
     
 </body>
 </html>
