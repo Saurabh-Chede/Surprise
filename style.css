@@ -1,0 +1,81 @@
+* {
+  font-family: monospace;
+  box-sizing: border-box;
+}
+
+body {
+  max-width: 1000px;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+ 
+}
+
+
+.red-container {
+  position: relative;
+  width: max-content;
+  height: max-content;
+  background-color: rgb(196, 11, 11);
+  border-radius: 0.8em;
+  overflow: hidden;
+}
+
+.red-container img {
+  display: block;
+  width: 200px;
+  height: 200px;
+  position: relative;
+  z-index: 2;
+  
+}
+
+.lyrics {
+  display: flex;
+  padding-inline: 10px;
+  align-items: center;
+  color: white;
+}
+
+.surprise_btn{
+  
+  background-color: yellow;
+  color: black;
+  border: none;
+  outline: none;
+  padding-inline: 20px;
+  padding-block: 10px;
+  font-weight: bolder;
+  cursor: pointer;
+}
+
+.rotate{
+  animation: rotateImage 5s linear infinite;
+}
+
+
+
+
+@keyframes rotateImage {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.red-container:hover {
+  background-color: rgb(134, 12, 12);
+}
+
+.red-container img:hover {
+  display: block;
+  width: 200px;
+  height: 200px;
+  position: relative;
+  z-index: 2;
+}
+
